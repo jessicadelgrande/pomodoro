@@ -1,0 +1,23 @@
+body {
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 400;
+	color: #484848;
+}
+
+.timerDisplay {
+	font-weight: 700;
+	font-size: 5rem;
+}
+
+button[data-time] {
+	font-family: 'Anonymous Pro', monospace;
+	font-size: 0.8rem;
+	padding: 16px;
+	margin: 8px;
+	border: 1px solid tomato;
+}
+
+button[data-time]:hover {
+	background-color: tomato;
+	color: white;
+}

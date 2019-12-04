@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Simple Pomodoro Timer</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1>This is a timer.</h1>
+	<div class="instructionsWrapper">
+		<p class="instructions">This is a simple timer to help you manage your time. It's based on the Pomodoro technique.</p>
+		<p class="instructions">When you're ready to begin your task, press The Pomodoro button. You will have 25 minutes of uninterrupted time until the Pomodoro is done.</p>
+		<p class="instructions">Take a 5 minute break. Press The Short Break button.</p>
+		<p class="instructions">After 4 Pomodoros, press The Long Break button and take 30 minutes to step away from your task.</p>
+	</div>
+
+	<!-- timer -->
+	<div class="timerDisplayWrapper">
+		<p class="timerDisplay">0:00</p>
+	</div>
+
+	<!-- buttons -->
+	<div class="buttonWrapper">
+		<div class="buttonGroup">
+			<button data-time="1500" class="pomodoroButton">The Pomodoro</button>
+			<button data-time="300" class="breakButton">The Short Break</button>
+			<button data-time="1800" class="breakButton">The Long Break</button>
+		</div>
+		<div class="buttonGroup">
+			<button data-time="60" class="addTimeButton">One Extra Minute</button>
+			<button data-time="0" class="resetButton">The Reset Button</button>
+		</div>
+	</div>
+
+	<script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+	<script src="script.js"></script>
+
+</body>
+</html>
